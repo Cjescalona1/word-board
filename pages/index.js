@@ -12,7 +12,6 @@ export default function Home() {
   let show=false;
    function handle(e, ind){ 
         let Us=used;
-        
         if(!used.includes(ind)){ 
           Us.push(ind);
           setUsed(Us);
@@ -25,9 +24,7 @@ export default function Home() {
         }  
     }
 function validate(ent){ 
-  let band=false;  
-        console.log("val ent",ent.toLowerCase());
-
+  let band=false;   
         for (let i = 0; i < D.words.length; i++) { 
             if (D.words[i]==ent.toLowerCase()){
               band=true
